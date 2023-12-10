@@ -33,3 +33,28 @@ const myfunction =function(){
 }
 
 console.log(typeof anotherId)
+
+//+++++++++++++++++++++++++++++++
+
+// there are two type of memory
+//1 stack (All the Primitive data type use)
+//2 heap (All the Non-Primitive data type use)
+
+let myYoutubename ="Rajiv"
+
+let anothername = myYoutubename
+console.log(myYoutubename)
+anothername = "chai aur code"
+console.log(anothername)
+
+let userOne = {
+    email: "user@gamil.com",
+    upi: "userpayment"
+}
+
+let userTwo = userOne
+
+userTwo.email = "rajiv@gmail.com"
+ console.log(userOne.email);
+ console.log(userTwo.email);
+ 
