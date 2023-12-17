@@ -39,5 +39,3 @@ console.log("C ",myArr);
 console.log(myn2);
 
 
-// array is finsishhh
-urweiur
