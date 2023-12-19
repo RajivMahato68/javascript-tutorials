@@ -38,14 +38,13 @@ if(true){
 
 
 ///++++++++++++++++++++++ interesting ++++++++++++++++++
-console.log(addone(5))
-function addone(num){
-    return num + 1
-}
+// console.log(addone(5))
+// function addone(num){
+//     return num + 1
+// }
 
 
-addTwo(5) //if you call the function then always give the error 
-const addTwo = function(num){
-    return num + 2
-}
-
+// addTwo(5) //if you call the function then always give the error 
+// const addTwo = function(num){
+//     return num + 2
+// }
