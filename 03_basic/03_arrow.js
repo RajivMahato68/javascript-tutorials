@@ -1,13 +1,13 @@
-const user = {
-    username: "Rajiv",
-    price: 999,
+// const user = {
+//     username: "Rajiv",
+//     price: 999,
 
-    welcomeMessage: function(){
-        console.log(`${this.username}, Welcome to Website`);
-        console.log(this);
-    }
+//     welcomeMessage: function(){
+//         console.log(`${this.username}, Welcome to Website`);
+//         console.log(this);
+//     }
 
-}
+// }
 
 // user.welcomeMessage()
 // user.username="sam"
@@ -28,10 +28,10 @@ const user = {
 // }
 
 
-const chai = () => {
-    let username = "hitesh"
-    console.log(this);
-}
+// const chai = () => {
+//     let username = "hitesh"
+//     console.log(this);
+// }
 // chai()
 
     // excplicit return 
