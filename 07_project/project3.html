@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div id="wrapper">
+        <h1>Number Guessing Game</h1>
+        <p>Try and guess a random Number between 1 and 100.</p>
+        <p>you have 10 attemps to guess the right number.</p>
+        <br>
+        <form action="" class="form">
+            <label for="guessField" id="guess">Guess a number</label>
+            <input type="text" id="guessField" class="guessField"><br>
+            <input type="submit" id="subt" class="guessSubmit" value="submit guess">
+        </form>
+        <div class="resultParas">
+            <p>preview Guesses: <span class="guesses"></span></p>
+            <p>GUessses Remaining: <span class="lastResult">10</span></p>
+            <p class="loworHi"></p>
+        </div>
+    </div>
+    <script src="rajiv3.js"></script>
+</body>
+</html>
