@@ -36,7 +36,9 @@ const mycodding =[
     }
 ]
 
-mycodding.forEach( (item)=>{
-    
-    console.log(item.languageFileNAme);
-})
+// // mycodding.forEach( function(item){
+// //     console.log(item.languageFileNAme)
+// // })
+// mycodding.map((key)=>{
+// console.log(key.languageNAme)
+// })
