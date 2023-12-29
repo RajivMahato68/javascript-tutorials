@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing Image</h2>
+    <ul id="images">
+        <li><img width="200px" id="photoshop" src="../image/dragon.jpg" alt="photoshop"></li>
+        <li><img width="200px" src="../image/dragon1.jpg" alt="" id="japan"></li>
+        <li><img width="200px" src="../image/dragon2.jpg" alt="" id="river"></li>
+        <li><img width="200px" src="../image/dragon3.jpg" alt="" id="owl"></li>
+        <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+    </ul>
+</body>
+<script>
+    //javascript event run smothly and simultenisly
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl click")
+    // }
+
+
+    //attachEvent()
+    //jQery - on
+
+
+    //type of event, timestamp , defaultPrevented, 
+    //target, toElement, srcElment, currentTarget
+    //Clientx, clientY, screenX, screenY
+    //altkey, ctrlkey,shiftkey, keycode
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("click inside the ul");
+    // },false)
+
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("OWl clicked");
+    //     e.stopPropagation()
+    // },false)
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    //     console.log("google click");
+        
+    // },false)
+    
+
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+        removeIt.remove()
+        }
+        
+        // removeIt.parentNode.removeChild(removeIt)
+    },false)
+    
+</script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Generator</title>
+    <style>
+        .main {
+            height: 50vh;
+            width: 50vw;
+            border: 1px solid black;
+        }
+        .demo {
+            width: 20px;
+        }
+        .container {
+            height: 40vh;
+        }
+    </style>
+</head>
+<body>
+    <button class="start">start</button>
+    <button class="stop">stop</button>
+    <div class="main">
+        <p class="demo"></p>
+        <div class="container"></div>
+    </div>
+    <script>
+        const randomColor = () => {
+            let hex = "0123456789ABCDEF";
+            let color = "#";
+            for (let i = 0; i < 6; i++) {
+                color += hex[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+        let intervalTime;
+        const addClick = () => {
+            if(!intervalTime){
+           intervalTime= setInterval(randomCol, 1000)
+            }
+            function randomCol(){
+                
+            
+            const demoElement = document.querySelector(".demo");
+            const containerElement = document.querySelector(".container");
+
+            demoElement.innerHTML = randomColor();
+            containerElement.style.backgroundColor = randomColor();
+            }
+        }
+
+        document.querySelector(".start").addEventListener("click", addClick);
+        document.querySelector(".stop").addEventListener("click", function (){
+            clearInterval(intervalTime)
+        })
+
+        const newTime = new Date();
+        console.log(newTime.toLocaleTimeString())
+    </script>
+</body>
+</html>

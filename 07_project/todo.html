@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="todo">
+        
+        <label for="">Write a task</label>
+        <input type="text" id="todo">
+        <button onclick="addTask()">submit</button>
+        <ul id="todo-list"></ul>
+    </div>
+</body>
+<script>
+    function addTask() {
+    const newTaskInput = document.getElementById('todo');
+    const taskText = newTaskInput.value.trim();
+
+    if (taskText === '') {
+        alert('Please enter a task.');
+        return;
+    }
+
+    const todoList = document.getElementById('todo-list');
+
+    const listItem = document.createElement('li');
+    listItem.className = 'todo-item';
+
+    const taskTextElement = document.createElement('span');
+    taskTextElement.innerText = taskText;
+
+    
+
+    listItem.appendChild(taskTextElement);
+  
+
+    todoList.appendChild();
+
+    // Clear the input field
+    newTaskInput.value = '';
+}
+
+</script>
+</html>
